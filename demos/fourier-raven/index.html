@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="robots" content="noindex,nofollow"><title>Fourier → ASCII Raven · Motion study</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header><a href="/zh-tw/" class="wordmark">YENJIA <span>/ MOTION STUDY</span></a><span class="demo-tag">RAVEN · 002</span></header>
+<main>
+<div class="intro"><div><p class="eyebrow">FOURIER → ASCII</p><h1>讓頻率，畫出烏鴉。</h1><p class="lede">旋轉圓描出輪廓，再自然浮現熟悉的 ASCII。</p></div><span class="preview-badge">獨立 Demo · 首頁尚未變更</span></div>
+<section class="stage" aria-label="傅立葉旋轉圓描繪烏鴉，再轉為 ASCII 的動畫預覽">
+<canvas id="raven-canvas" aria-hidden="true"></canvas>
+<div class="stage-top"><span id="phase-label">01 / FOURIER</span><span id="phase-progress">000%</span></div>
+<div class="stage-bottom"><span>z(t) = ∑ cₙ eⁱⁿᵗ</span><span id="harmonics-label">96 EPICYCLES</span></div>
+<pre id="ascii-fallback" aria-label="目前首頁使用的 ASCII 烏鴉">                    .:=++++++*%@@@%#+:
+                   .+#%@@@@@@@@@@@@@@@*:
+                        .-+%@@@@@@@@@@@@-
+                           .#@@@@@@@@@@@@.
+                            -*#%@@@@@@@@@+
+                          -#%@@@@@@@@@@@@#
+                       .+%@@@@@@@@@@@@@@@@.
+                     :*@@@@@@@@@@@@@@@@@@@+
+                   .*@@@@@@@@@@@@@@@@@@@@@%
+                 .+@@@@@@@@@@@@@@@@@@@@@@@%
+               .+%@@@@@@@@@@@@@@@@@@@@@@@@+
+             .+%@@@@@@@@@@@@@@@@@@@@@@@@@#
+           .=%@@@@@@@@@@@@@@@@@@@@@@@@@%=
+          =%@@@@@@@@@@@@@@@@@@@@@@@@@#=.
+        -%@@@@@@@@@@@@@@@@@@@@@@@@*=:
+       -**%@@@@@@@@@@@@@@@@@@@@@@=
+        :*@@@@@@@@@@@@@@@@%*=*@@%
+      .*@@@@@@@@@@@@@@@%%@#  .*@@:
+     =@@@@@@@@@%@@@%*=: .-##:  .+%+.
+   -%@@@@@@@@**@%*-.       =#*:  .+#=.
+ .*@@@@@@@%+::=:            =%@#*=-#@%*+==-.
+-%@@@@@%*-.                 . ........:...:.
+%@@%#+-.</pre>
+<div class="timeline" aria-hidden="true"><span id="timeline-fill"></span></div>
+</section>
+<div class="transport"><div class="playback"><button id="replay" type="button" disabled>↻ 重播</button><button id="pause" type="button" disabled>Ⅱ 暫停</button><label class="circles"><input id="show-circles" type="checkbox" checked disabled> 顯示旋轉圓</label></div><label class="terms">圓的數量 <input id="terms" type="range" min="24" max="160" step="8" value="96" disabled><output id="terms-value" for="terms">96</output></label></div>
+<div class="sequence" aria-label="動畫步驟"><span data-phase="draw"><b>01</b> 旋轉圓描繪</span><i>→</i><span data-phase="hold"><b>02</b> 輪廓完成</span><i>→</i><span data-phase="morph"><b>03</b> ASCII 浮現</span></div>
+<p class="note" id="motion-note">輪廓取自目前首頁的 ASCII 烏鴉，以離散傅立葉轉換計算，保留同一隻烏鴉的比例。</p>
+<p class="sr-only" id="animation-status" role="status" aria-live="polite"></p>
+</main><script src="./raven-data.js"></script><script src="./demo.js"></script>
+</body></html>

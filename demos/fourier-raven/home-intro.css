@@ -1,0 +1,11 @@
+.fourier-intro-pending .raven-art .fetch-ascii{opacity:0}
+.raven-art.fourier-intro-art{position:relative}
+.home-fourier-canvas{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.raven-button[data-fourier-running]{pointer-events:none}
+.fourier-preview-toolbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:85;display:flex;align-items:center;gap:14px;width:max-content;max-width:calc(100% - 24px);padding:8px 12px;border:1px solid var(--site-border);border-radius:8px;background:color-mix(in srgb,var(--site-surface) 95%,transparent);box-shadow:0 8px 30px #0003;backdrop-filter:blur(12px);color:var(--site-ink);font-size:12px}
+.fourier-preview-toolbar>span{font-weight:600;white-space:nowrap}.fourier-preview-toolbar small{display:block;font:10px/1.6 "JetBrains Mono",monospace;color:var(--site-muted)}
+.fourier-preview-toolbar button,.fourier-preview-toolbar>a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;white-space:nowrap;font:inherit;color:var(--site-accent)}
+.fourier-preview-toolbar button{padding:6px 12px;border:1px solid var(--site-border);border-radius:5px;background:var(--site-soft);cursor:pointer}.fourier-preview-toolbar button:disabled{opacity:.45;cursor:default}
+body:has(.fourier-preview-toolbar){padding-bottom:84px}
+@media(max-width:460px){.fourier-preview-toolbar{gap:10px;font-size:11px;padding:6px 10px}.fourier-preview-toolbar small{display:none}.fourier-preview-toolbar button{padding:6px 9px}}
+@media(prefers-reduced-motion:reduce){.fourier-intro-pending .raven-art .fetch-ascii{opacity:1}}
