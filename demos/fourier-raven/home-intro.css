@@ -1,0 +1,14 @@
+.fourier-intro-pending .raven-art .fetch-ascii{opacity:0}
+.raven-art.fourier-intro-art{position:relative}
+.home-fourier-canvas{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.raven-button[data-fourier-running]{pointer-events:none}
+@media(prefers-reduced-motion:reduce){.fourier-intro-pending .raven-art .fetch-ascii{opacity:1}}
+.raven-method-choices{display:inline}
+.raven-method-choices button+button{margin-inline-start:.8ch}
+.raven-method-choices button{padding:0 .3ch;border:0;background:none;color:var(--fetch-value);font:inherit;cursor:pointer;text-underline-offset:3px}
+.raven-method-choices button::before{content:"[";color:var(--fetch-dots)}.raven-method-choices button::after{content:"]";color:var(--fetch-dots)}
+.raven-method-choices button:hover{color:var(--fetch-hover);text-decoration:underline}
+.raven-method-choices button[aria-pressed=true]{color:var(--site-accent)}
+.raven-method-choices button:focus-visible{outline:2px solid var(--site-accent);outline-offset:2px}
+.raven-method-readout{font-variant-numeric:tabular-nums;color:var(--fetch-value)}
+@media(pointer:coarse){.raven-method-choices button{min-height:32px}}
