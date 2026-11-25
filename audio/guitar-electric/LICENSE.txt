@@ -1,0 +1,12 @@
+Electric guitar samples: tonejs-instruments, by nbrosowsky.
+Original recordings: Karoryfer Samples.
+Source: https://github.com/nbrosowsky/tonejs-instruments
+Pinned revision: 622c2f1c32c8cfce4158ddc3eb26e518ddef37e5
+Upstream source information: https://github.com/nbrosowsky/tonejs-instruments/blob/622c2f1c32c8cfce4158ddc3eb26e518ddef37e5/sample-source-info.txt
+Samples licensed under Creative Commons Attribution 3.0 Unported:
+https://creativecommons.org/licenses/by/3.0/
+https://creativecommons.org/licenses/by/3.0/legalcode
+Recordings were shortened to 3.2 seconds, given a 150 ms fade out, and
+re-encoded as 128 kbps MP3. Missing notes were pitch shifted by one semitone
+from the nearest recording. Filenames are sounding MIDI note numbers.
+Playback combines individual recordings into guitar chord strums.
